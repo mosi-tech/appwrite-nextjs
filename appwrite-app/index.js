@@ -13,6 +13,7 @@ const createExecution = async (functionId, body, async = false, xpath='', method
                 // This may be incorrect
                 json: async(obj) => {
                     console.log(obj)
+                    //Adjust the output to match appwrite output format.
                     return {response: JSON.stringify(obj)}
                 }
             },

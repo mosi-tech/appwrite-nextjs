@@ -2,7 +2,7 @@ import appwriteExecution from './appwriteExecution'
 
 export default async function handler(input) {
     try {
-        const execution = await appwriteExecution(input)
+        const execution = await appwriteExecution('FUNCTION_ID', input)
         console.log(execution)
         if (execution.response) {
             console.log(execution.response)
